@@ -1,31 +1,308 @@
-<html>
-  <!-- TODO : remove the ".deleteme" extension from this filename -->
-  <!-- TODO: Replace Mr. Miyamoto's name with yours -->
-  <h1>The Portfolio of Gerrard Choe</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hyung Yul (Gerrard) Choe</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://hychoe0.github.io/" class="link"
+          >HYC</a
+        >
+      </h3>
 
-  <h2>Projects</h2>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <!-- <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li> -->
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
 
-  <!-- TODO: Organize and add links to your P1 builds and P1 video demontration. -->
-  <ul>
-    <li>
-      <a href="https://www.youtube.com/watch?v=b0jnjGGsu80"
-        >Project 1 : CSE Simulator (Unreal Engine)</a
-      >
-    </li>
-    <li>
-      <a href="https://www.youtube.com/watch?v=Z3yDQe7M3IY"
-        >Project 2 : Ann Arbor Go! (Unity)</a
-      >
-    </li>
-    <li>
-      <a href="https://www.youtube.com/watch?v=4U4b5qfFaV0"
-        >Project 3 : NeuroFit Fusion VR</a
-      >
-    </li>
-    <li>
-      <a href="https://zainzai.wixstudio.io/neurofit">Project 3 Website</a>
-    </li>
-  </ul>
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
 
-  <!-- TIP: keep this file "index.html", and it will become the default landing page whenever someone navigates their browser to your domain. -->
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Hyung Yul Choe.</span></h1>
+        <!-- <h2 class="about__role">A Front end Developer.</h2> -->
+        <p class="about__desc">
+          Hi, I'm Hyung Yul (Gerrard) Choe, a multidisciplinary creator blending Computer Science and Art & Design. I build intuitive digital experiences from responsive full-stack applications to interactive AR/VR interfaces. 
+          With a passion for innovation and a keen eye for aesthetic, I love creating technology that is as elegant as it is functional.
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/1M-4IMUnuGyPjCoB-Q4O9GxA-3mYvZ2PA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/hychoe0"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/gerrard-choe-30b7a124b/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- AR/VR Projects -->
+      <section id="arvr_projects" class="section projects">
+        <h2 class="section__title">AR/VR Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>CSE Simulator</h3>
+            <p class="project__description">
+              Reviving BBB Computer Lab in University of Michigan.
+              Virtual Reality Space in the creation of a Job Simulator variant titled “CSE Simulator”.           
+              Worked in a group of 2.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Unreal Engline</li>
+              <li class="project__stack-item">C++</li>
+            </ul>
+
+            <a
+              href="https://www.youtube.com/watch?v=b0jnjGGsu80"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>A2 Go!</h3>
+            <p class="project__description">
+              AR Project/Game motivated by Pokemon Go.
+              Utilized real-time location to plant virtual trees in Ann Arbor.
+              Walk and play and save the Earth (virtually)!
+              Worked in a group of 2.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Unity</li>
+              <li class="project__stack-item">C#</li>
+            </ul>
+
+            <a
+              href="https://www.youtube.com/watch?v=Z3yDQe7M3IY"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+          </a>
+          </div>
+
+          <div class="project">
+            <h3>NeuroFit Fusion VR</h3>
+            <p class="project__description">
+              NeuroFit, a collection of VR minigames that challenge logical, 
+              memory, & numerical skills while keeping the player physically active.
+              Worked in a group of 4.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Unreal Engine</li>
+              <li class="project__stack-item">C++</li>
+            </ul>
+
+            <a
+              href="https://www.youtube.com/watch?v=4U4b5qfFaV0"
+              aria-label="source code"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+          </a>
+            <a
+              href="https://zainzai.wixstudio.com/neurofit"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frontend Projects -->
+      <section id="frontend_projects" class="section projects">
+        <h2 class="section__title">Frontend/Web Design Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>FashioAR</h3>
+            <p class="project__description">
+              FashioAR is a interactive design project developed to provide an advanced e-commerce experience for customers using AI and AR/VR technology.
+              Worked in a group of 2.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Figma</li>
+            </ul>
+
+            <a
+              href="https://www.figma.com/proto/eYpTInmNr8mZ8lD7Q5ZPe0/FashioAR-Final?node-id=2036-791&t=BeJCGhcuGcWmD9Ob-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Curatd</h3>
+            <p class="project__description">
+              Curatd is a centralized shopping site as a clothing retail hub that grants consumers the ability to shop a large variety of brands and styles in an AI-powered and organized place.
+              The website can save consumers a lot of time, effort, and money by eliminating the task of having to visit many online stores to find what they are looking for. 
+              Worked in a group of 4.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Figma</li>
+            </ul>
+
+            <a
+              href="https://www.canva.com/design/DAGkhwGIA-o/ApT7ge726RXPT7t4DqGzmw/edit?utm_content=DAGkhwGIA-o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1AbzWM-1QdlE1Pb9QJZwpvhRt0YkzKObF/view?usp=sharing"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Other Frontend Works</h3>
+            <p class="project__description">
+              Since works during the internship can not be disclosed, only screenshots from deployed application included.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">Figma</li>
+            </ul>
+
+            <a
+              href="https://drive.google.com/file/d/1FYLLXzJZmz69FZjWkdVeic9Ygsd3UNmU/view?usp=sharing"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">C#</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">Unity</li>
+          <li class="skills__list-item btn btn--plain">Unreal</li>
+          <li class="skills__list-item btn btn--plain">Figma</li>
+        
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:hyungyulchoe0405@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/rjshkhr/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Template by Raj Shekhar
+        Modified by Gerrard Choe
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
+
+<!-- TODO: Organize and add links to your P1 builds and P1 video demontration.
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=b0jnjGGsu80"
+      >Project 1 : CSE Simulator (Unreal Engine)</a
+    >
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=Z3yDQe7M3IY"
+      >Project 2 : Ann Arbor Go! (Unity)</a
+    >
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=4U4b5qfFaV0"
+      >Project 3 : NeuroFit Fusion VR</a
+    >
+  </li>
+  <li>
+    <a href="https://zainzai.wixstudio.io/neurofit">Project 3 Website</a>
+  </li>
+</ul> -->
